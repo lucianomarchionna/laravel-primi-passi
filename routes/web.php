@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        'languages' => [
+            'ITALIANO = Ciao Mondo',
+            'TEDESCO = Hallo Welt',
+            'SPAGNOLO = Hola Mundo',
+            'FRANCESE = Bonjour le monde',
+            'GIAPPONESE = こんにちは世界'
+        ] 
+    ];
+
+    return view('home', $data);
 });

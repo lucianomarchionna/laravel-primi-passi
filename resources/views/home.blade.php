@@ -9,5 +9,8 @@
     </head>
     <body>
         <h1>HELLO WORLD!</h1>
+        @foreach ($languages as $language)
+        <h2>{{$language}}</h2>
+        @endforeach
     </body>
 </html>
